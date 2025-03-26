@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: nalla06/go-web
-  tag: "14088683148"
+  tag: "latest"
   pullPolicy: IfNotPresent
 
 ingress:
