@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: nalla06/go-web
-  tag: "14089486234"
+  tag: "14090767426"
   pullPolicy: IfNotPresent
 
 ingress:
