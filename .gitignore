@@ -1,0 +1,12 @@
+# Ignore archives
+*.tar.gz
+*.zip
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore specific files
+go1.21.6.linux-amd64.tar.gz
+gogo1.21.6.linux-amd64.tar.gz.1
+commands-used.md
