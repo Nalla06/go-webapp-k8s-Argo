@@ -1,0 +1,62 @@
+run:
+  # timeout for analysis
+  timeout: 5m
+
+linters:
+  # Enable specific linters
+  enable:
+    - errcheck
+    - gofmt
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - typecheck
+    - unused
+    - gocritic
+    - goimports
+
+  # Disable specific linters if needed
+  disable:
+    - deadcode
+    - varcheck
+    - structcheck
+
+linters-settings:
+  govet:
+    # report about shadowed variables
+    check-shadowing: true
+  
+  gofmt:
+    # simplify code: gofmt with `-s` option
+    simplify: true
+  
+  gomnd:
+    # don't include magic numbers in checks
+    ignored-numbers:
+      - '3000'  # your server port number
+    
+  gocritic:
+    enabled-checks:
+      - commentedOutCode
+      - deprecatedComment
+      - dupImport
+      - ifElseChain
+      - regexpMust
+
+issues:
+  # Excluding configuration
+  exclude-rules:
+    # Exclude some linters for test files
+    - path: _test\.go
+      linters:
+        - gocyclo
+        - errcheck
+        - dupl
+        - gosec
+
+  # Maximum issues count per one linter
+  max-issues-per-linter: 50
+  
+  # Maximum count of issues with the same text
+  max-same-issues: 3
