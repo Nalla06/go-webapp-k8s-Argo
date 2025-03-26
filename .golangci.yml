@@ -5,22 +5,22 @@ run:
 linters:
   # Enable specific linters
   enable:
-    - errcheck
-    - gofmt
-    - gosimple
-    - govet
-    - ineffassign
-    - staticcheck
-    - typecheck
-    - unused
-    - gocritic
-    - goimports
+    - errcheck     # Checks for unchecked errors
+    - gofmt        # Checks code formatting
+    - gosimple     # Simplifies code
+    - govet        # Finds potential issues
+    - ineffassign  # Detects ineffective assignments
+    - staticcheck  # Advanced static analysis
+    - typecheck    # Type checking
+    - unused       # Finds unused code
+    - gocritic     # Provides additional code recommendations
+    - goimports    # Manages import statements
 
-  # Disable specific linters if needed
+  # Disable some default linters
   disable:
-    - deadcode
-    - varcheck
-    - structcheck
+    - depguard
+    - gosec
+    - nolintlint
 
 linters-settings:
   govet:
@@ -34,7 +34,7 @@ linters-settings:
   gomnd:
     # don't include magic numbers in checks
     ignored-numbers:
-      - '3000'  # your server port number
+      - '3000'  # server port number
     
   gocritic:
     enabled-checks:
@@ -55,8 +55,16 @@ issues:
         - dupl
         - gosec
 
-  # Maximum issues count per one linter
+  # Maximum issues per linter
   max-issues-per-linter: 50
   
   # Maximum count of issues with the same text
   max-same-issues: 3
+
+# Optional: Performance optimizations
+performance:
+  # Skip directories
+  skip-dirs:
+    - vendor
+    - third_party
+    - testdata
