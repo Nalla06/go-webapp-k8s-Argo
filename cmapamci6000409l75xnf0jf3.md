@@ -3,7 +3,6 @@ title: "Deploying a Scalable Three-Tier Application on AWS with Kubernetes, CI/C
 datePublished: Thu May 15 2025 11:35:26 GMT+0000 (Coordinated Universal Time)
 cuid: cmapamci6000409l75xnf0jf3
 slug: deploying-a-scalable-three-tier-application-on-aws-with-kubernetes-cicd-and-monitoring
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1747308908812/f1b792ca-61bf-44a7-bdd8-8d37ca0b6e3f.png
 
 ---
 
