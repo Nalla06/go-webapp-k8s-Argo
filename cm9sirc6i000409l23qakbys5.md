@@ -93,8 +93,6 @@ This stage focuses on container security:
 * Examines both the application and its dependencies
     
 
-\[INSERT DOCKER BUILD/SCAN SCREENSHOT HERE\]
-
 ### 5\. Kubernetes Deployment Updates
 
 The final automated stage prepares for deployment:
