@@ -16,8 +16,6 @@ In today's fast-paced software development landscape, integrating security into 
 
 The DevSecOps pipeline I've designed follows a comprehensive approach to ensure code quality, security, and reliable deployments. Here's a visual representation of the pipeline:
 
-\[INSERT PIPELINE DIAGRAM IMAGE HERE\]
-
 The pipeline consists of several key stages:
 
 * **Unit Testing**: Validates individual components of the application
@@ -39,8 +37,6 @@ The pipeline consists of several key stages:
 
 The heart of my pipeline is implemented using GitHub Actions. The complete implementation is available in [my GitHub repository](https://github.com/nalla06/devsecops-cicd-tiktactoe-game).
 
-\[INSERT GITHUB ACTIONS WORKFLOW SCREENSHOT HERE\]
-
 My pipeline follows a security-first approach with these core stages:
 
 ### 1\. Unit Testing
@@ -56,8 +52,6 @@ The first stage validates individual components of the application:
 * Provides immediate feedback to developers
     
 
-\[INSERT UNIT TESTING SCREENSHOT HERE\]
-
 ### 2\. Static Code Analysis
 
 This critical security step examines code without executing it:
@@ -71,8 +65,6 @@ This critical security step examines code without executing it:
 * Prevents insecure code from progressing further in the pipeline
     
 
-\[INSERT STATIC ANALYSIS SCREENSHOT HERE\]
-
 ### 3\. Build Process
 
 Once code passes initial tests and analysis:
@@ -85,8 +77,6 @@ Once code passes initial tests and analysis:
     
 * Only proceeds if both test and lint stages pass
     
-
-\[INSERT BUILD PROCESS SCREENSHOT HERE\]
 
 ### 4\. Docker Build and Security Scanning
 
@@ -118,8 +108,6 @@ The final automated stage prepares for deployment:
 * Sets the stage for Argo CD to handle actual deployment
     
 
-\[INSERT K8S UPDATE SCREENSHOT HERE\]
-
 ### 6\. Continuous Deployment with Argo CD
 
 Though configured outside the GitHub Actions workflow:
@@ -132,8 +120,6 @@ Though configured outside the GitHub Actions workflow:
     
 * Enables easy rollback if issues are detected
     
-
-\[INSERT ARGO CD SCREENSHOT HERE\]
 
 ## Security Integration
 
@@ -160,8 +146,6 @@ The true power of this DevSecOps pipeline is how it integrates security at multi
     
 * **Immutable Deployments**: Each deployment uses a unique image tag tied to a specific commit
     
-
-\[INSERT TRIVY SCAN RESULTS SCREENSHOT HERE\]
 
 ## Future Enhancements
 
